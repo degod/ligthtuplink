@@ -1,0 +1,65 @@
+h1, h2, h3 {
+    padding-bottom: 0 !important;
+}
+.accordion-body{
+	display: block !important;
+}
+@media screen and (max-width: 767px){
+	.networkProviders{
+		padding: 1rem 6rem !important;
+    	margin-bottom: 1rem;
+	}
+	.cableNetworks{
+		margin-bottom: 1rem;
+	}
+}
+@media screen and (min-width: 767px){
+	.networkProviders{
+		 margin-bottom: 1rem; 
+	}
+	.cableNetworks{
+		margin-bottom: 1rem;
+	}
+}
+ @media screen and (min-width: 1200px){
+	.networkProviders{
+		
+	}
+}
+.offcanvas-bottom{
+	right: 10%;
+	left: 10%;
+	height: 34vh;
+	margin-bottom: 17%;
+}
+@media screen and (max-width: 360px){
+	.offcanvas-bottom{
+		height: 58vh;
+		margin-bottom: 41%;
+	}
+}
+@media screen and (max-width: 768px){
+	.offcanvas-bottom{
+		height: 49vh;
+		margin-bottom: 18%;
+	}
+}
+@media screen and (max-width: 1024px){
+	.offcanvas-bottom{
+		height: 53vh;
+		margin-bottom: 14%;
+	}
+}
+@media screen and (max-width: 1440px){
+	.offcanvas-bottom{
+		height: 57vh !important;
+		margin-bottom: 10% !important;
+	}
+}
+@media screen and (max-width: 2560px){
+	.offcanvas-bottom{
+		right: 20% !important;
+		left: 20% !important;
+		margin-bottom: 7% !important;
+	}
+}

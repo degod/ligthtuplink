@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="The Side bar">
+        <meta name="author" content="Coderthemes">
+		<link rel="stylesheet" Content-type="text/css" href="/css/app.css"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
+		
+		<!-- 	favicon icons	 -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon.ico">
+		<link rel="manifest" href="/favicon_io/site.webmanifest">
+        
+        <title>LightUp Link - Light is life</title>
+
+       <%- include("partials/barpath") %>
+
+    </head>
+
+
+    <body>
+			<!-- Sidebar -->
+			<%- include("partials/sidebar") %>
+			<!-- Sidebar Ends -->
+
+            <!-- Top Bar Start -->
+            <%- include("partials/navbar") %>
+            <!-- Top Bar End -->
+
+						<div class="container">
+							<div class="jumbotron">
+								<img class="p-2" src="/images/Pay-DSTV-Subscription.jpg">
+							  <form method="get" action="/tvSubConfirmation">
+								  <div class="form-row">
+									<div class="form-group col-md-6">
+									  <label for="inputEmail4">Bouquet</label>
+									  <select class="form-select" aria-label="Default select example" id="bouquet">
+										  <option value="" selected="selected">Please Select bouquet</option>
+										  <option value="1,850">DStv Padi &#8358;1,850</option>
+										  <option value="2,565">DStv Yanga &#8358;2,565</option>
+										  <option value="4,615">Dstv Confam &#8358;4,615</option>
+										  <option value="7,900">DStv  Compact &#8358;7900</option>
+										  <option value="18,400">DStv Premium &#8358;18,400</option>
+										  <option value="6,200">DStv Asia &#8358;6,200</option>
+										  <option value="12,400">DStv Compact Plus &#8358;12,400</option>
+										  <option value="25,550">DStv Premium-French &#8358;25,550</option>
+										  <option value="20,500">DStv Premium-Asia &#8358;20,500</option>
+										  <option value="2,300">DStv French Touch Add-on &#8358;2,300</option>
+										  <option value="2,500">ExtraView Access &#8358;2,500</option>
+										  <option value="3,260">DStv French 11 &#8358;3,260</option>
+										  <option value="7,115">DStv Confam + ExtraView &#8358;7,115</option>
+										  <option value="5,065">DStv Yanga + ExtraView &#8358;5,065</option>
+										  <option value="4,350">DStv Padi + ExtraView &#8358;4,350</option>
+										  <option value="14,100">DStv Compact + Asia &#8358;14,100</option>
+										  <option value="10,400">DStv Compact + Extra View &#8358;10,400</option>
+										  <option value="10,200">DStv Compact + French Touch &#8358;10,200</option>
+										  <option value="20,900">DStv Premium - Extra View &#8358;20,900</option>
+										  <option value="18,600">DStv Compact Plus - Asia &#8358;18,600</option>
+										  <option value="12,700">DStv Compact + French Touch + ExtraView &#8358;12,700</option>
+										  <option value="16,600">DStv Compact + Asia + ExtraView &#8358;16,600</option>
+										  <option value="20,500">DStv Compact Plus + French Plus &#8358;20,500</option>
+										  <option value="14,700">DStv Compact Plus + French Touch &#8358;14,700</option>
+										  <option value="14,900">DStv Compact Plus - Extra View &#8358;14,900</option>
+										  <option value="23,000">DStv Compact Plus + FrenchPlus + Extra View &#8358;23,000</option>
+										  <option value="16,000">DStv Compact + French Plus &#8358;16,000</option>
+										  <option value="21,100">DStv Compact Plus + Asia + ExtraView &#8358;21,100</option>
+										  <option value="23,000">DStv Premium + Asia + Extra View &#8358;23,000</option>
+										  <option value="28,000">DStv Premium + French + Extra View &#8358;28,000</option>
+										  <option value="2,500">DStv HDPVR Access Service &#8358;2,500</option>
+										  <option value="8,100">DStv French Plus Add-on &#8358;8,100</option>
+										  <option value="6,200">DStv Asian Add-on &#8358;6,200</option>
+										</select>
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="cardNumber">DSTv Smartcard Number</label>
+									  <input type="text" class="form-control" id="cardNumber" placeholder="Enter DSTv Smartcard Number" required>
+									</div>
+								  </div>
+								  <div class="form-row">
+									<div class="form-group col-md-6">
+									  <label for="phoneNumber">Phone Number</label>
+									  <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number" required>
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputEmail">Email</label>
+									  <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+									</div>
+								  </div>
+								  <div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="amountPaid">Amount(Naira)</label>
+									  <input type="text" class="form-control" id="amountPaid" placeholder="Enter Amount" required>
+									</div>
+								  </div>
+								  <button type="submit" class="btn btn-primary" onclick="getDataTvSubscription()">Continue</button>
+								<button type="submit" class="btn btn-primary">Cancel</button>
+								</form>
+							</div>
+						</div> <!-- container -->
+					<div>
+				</div>
+			</div>
+        </div>
+	<!-- Content End -->
+	<script type="text/javascript">
+			var select = document.getElementById("bouquet");
+			var input = document.getElementById("amountPaid");
+			select.onchange = function(){
+				input.value = this.value;
+			}
+		</script>
+            <%- include("partials/footer") %>

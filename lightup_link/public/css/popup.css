@@ -1,0 +1,41 @@
+@media screen and (min-width: 320px){
+	.offcanvas-bottom{
+		right: 0%;
+		left: 0%;
+		height: 70vh;
+		margin-bottom: 0%;
+	}
+}
+@media screen and (min-width: 768px){
+	.offcanvas-bottom{
+		right: 10%;
+		left: 10%;
+		height: 49vh;
+		margin-bottom: 18%;
+	}
+}
+@media screen and (min-width: 1024px){
+	.offcanvas-bottom{
+		right: 10%;
+		left: 10%;
+		height: 53vh;
+		margin-bottom: 14%;
+	}
+}
+@media screen and (min-width: 1440px){
+	.offcanvas-bottom{
+		right: 10%;
+		left: 10%;
+		height: 57vh;
+		margin-bottom: 10%;
+	}
+}
+@media screen and (min-width: 2560px){
+	.offcanvas-bottom{
+		right: 10%;
+		left: 10%;
+		right: 20%;
+		left: 20%;
+		margin-bottom: 7%;
+	}
+}

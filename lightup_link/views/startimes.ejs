@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="The Side bar">
+        <meta name="author" content="Coderthemes">
+		<link rel="stylesheet" Content-type="text/css" href="/css/app.css"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
+		
+		<!-- 	favicon icons	 -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon.ico">
+		<link rel="manifest" href="/favicon_io/site.webmanifest">
+        
+        <title>LightUp Link - Light is life</title>
+
+     <%- include("partials/barpath") %>
+    </head>
+
+
+    <body>
+			<!-- Sidebar -->
+			<%- include("partials/sidebar") %>
+			<!-- Sidebar Ends -->
+
+            <!-- Top Bar Start -->
+            <%- include("partials/navbar") %>
+            <!-- Top Bar End -->
+
+						<div class="container">
+							<div class="jumbotron">
+								<img class="p-2" src="/images/startimes-removebg-preview.png">
+							  <form method="get" action="/tvSubConfirmation" class="validated-form" novalidate>
+								  <div class="form-row">
+									<div class="form-group col-md-6">
+									  <label for="inputEmail4">Bouquet</label>
+										<select class="form-select" aria-label="Default select example" id="bouquet" required>
+											<option selected>Select Bouquet</option>
+											<option value="300">Nova - 300 Naira - 1 Week</option>
+											<option value="600">Basic - 600 Naira - 1 Week</option>
+											<option value="700">Smart - 700 Naira - 1 Week</option>
+											<option value="1,200">Classic - 1200 Naira - 1 Week </option>
+											<option value="1,500">Super - 1,500 Naira - 1 Week</option>
+											<option value="90">Nova - 90 Naira - 1 Day</option>
+											<option value="160">Basic - 160 Naira - 1 Day</option>
+											<option value="200">Smart - 200 Naira - 1 Day</option>
+											<option value="320">Classic - 320 Naira - 1 Day </option>
+											<option value="400">Super - 400 Naira - 1 Day</option>
+											<!--<option value="ewallet Amount">ewallet Amount</option>-->
+											<option value="900">Nova - 900 Naira - 1 Month</option>
+											<option value="1,700">Basic - 1,700 Naira - 1 Month</option>
+											<option value="2,200">Smart - 2,200 Naira - 1 Month</option>
+											<option value="2,500">Classic - 2,500 Naira - 1 Month</option>
+											<option value="4,200">Super - 4,200 Naira - 1 Month</option>
+										</select>
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="cardNumber">Startimes Smartcard</label>
+									  <input type="text" class="form-control" id="cardNumber" placeholder="Enter Startimes Smartcard" required>
+									</div>
+								  </div>
+								  <div class="form-row">
+									<div class="form-group col-md-6">
+									  <label for="phoneNumber">Phone Number</label>
+									  <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number" required >
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputEmail">Email</label>
+									  <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+									</div>
+								  </div>
+								  <div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="amountPaid">Amount(Naira)</label>
+									  <input type="text" class="form-control" id="amountPaid" placeholder="Enter Amount" required>
+									</div>
+								  </div>
+								  <button type="submit" class="btn btn-primary" onclick="getDataTvSubscription()">Continue</button>
+								<button type="submit" class="btn btn-primary">Cancel</button>
+								</form>
+							</div>
+						</div> <!-- container -->
+					<div>
+				</div>
+			</div>
+        </div>
+	<!-- Content End -->
+		<script type="text/javascript">
+			var select = document.getElementById("bouquet");
+			var input = document.getElementById("amountPaid");
+			select.onchange = function(){
+				input.value = this.value;
+			}
+		</script>
+            <%- include("partials/footer") %>

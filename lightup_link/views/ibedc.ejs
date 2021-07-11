@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="The Side bar">
+        <meta name="author" content="Coderthemes">
+		<link rel="stylesheet" Content-type="text/css" href="/css/app.css"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
+		
+		<!-- 	favicon icons	 -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon.ico">
+		<link rel="manifest" href="/favicon_io/site.webmanifest">
+        
+        <title>LightUp Link - Light is life</title>
+
+        <!-- App css -->
+		<%- include("partials/barpath") %>
+    </head>
+
+
+    <body>
+			<!-- Sidebar -->
+			<%- include("partials/sidebar") %>
+			<!-- Sidebar Ends -->
+		
+            <!-- Top Bar Start -->
+            <%- include("partials/navbar") %>
+            <!-- Top Bar End -->
+
+						<div class="container">
+							<div class="jumbotron">
+								<div class="left-logo">
+								<img class="pt-2 pb-5" src="/images/ibedc-removebg-preview.png">
+								</div>
+							 <form class="electric" method="get" action="/electricityBillConfirmation">
+								  <div class="form-row">
+									<div class="form-group col-md-6">
+									  <label for="inputEmail4">Meter Type</label>
+										<select class="form-select" aria-label="Default select example" id="meterType">
+										  <option selected>Select Meter Type</option>
+										  <option value="1">Prepaid</option>
+										  <option value="2">Postpaid</option>
+										</select>
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="phoneNumber">Phone Number</label>
+									  <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number">
+									</div>
+								  </div>
+								  <div class="form-row">
+									<div class="form-group col-md-6">
+									  <label for="meterNumber">Meter Number</label>
+									  <input type="text" class="form-control" id="meterNum" placeholder="Enter Meter Number">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputEmail">Email</label>
+									  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+									</div>
+								  </div>
+								  <div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="amountPaid">Amount(Naira)</label>
+									  <input type="text" class="form-control" id="amountPaid" placeholder="Enter Amount">
+									</div>
+								  </div>
+								  <button type="submit" class="btn btn-primary" onclick="getDataElectricity()">Proceed</button>
+								<button type="submit" class="btn btn-primary">Cancel</button>
+								</form>
+							</div>
+						</div> <!-- container -->
+					<div>
+				</div>
+			</div>
+        </div>
+	<!-- Content End -->
+
+            <%- include("partials/footer") %>

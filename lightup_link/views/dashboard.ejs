@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	  <!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Lightup Link - dashboard</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/dashboard.css">
+	<%- include("partials/barpath") %>
+</head>
+<body>
+  	<%- include("partials/sidebar") %>
+	<%- include("partials/navbar") %>
+    				<div class="container">				 
+						<div class="card bg-light me-4 text-center border border-secondary rounded-top">
+							<div class="card-body">
+								<h1 class="card-title">
+									Previous Transaction:
+								</h1>
+								<div class="dard-text">
+									<div class="row">
+										<div class="col-lg-4">
+											<h4>
+												Service
+											</h4>
+											<p>
+												<span>IKEDC</span> Bills
+											</p>
+										</div>
+										<div class="col-lg-4">
+											<h4>
+												Amount
+											</h4>
+										 	<p>
+												<span>4000</span>NGN
+											</p>
+										</div>
+										<div class="col-lg-4">
+											<h4>
+												Date
+											</h4>
+											<span>22-6-2050</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card text-center bg-light mt-5 me-4 d-none d-md-block border border-secondary rounded-top">
+							<div class="card-body">
+								<h1 class="card-title">
+									Transactions For This Month: <span>June</span>
+								</h1>
+								<table class="table">
+								  <thead>
+									<tr> 
+									  <th scope="col">S/N</th>
+									  <th scope="col">Service</th>
+									  <th scope="col">Amount(NGN)</th>
+									  <th scope="col">Date & Time</th>
+									</tr>
+								  </thead>
+								  <tbody>
+									<tr>
+									  <th scope="row">1</th>
+									  <td>Airtel Subscription</td>
+									  <td>10000</td>
+									  <td>5th 4:20 PM</td>
+									</tr>
+									<tr>
+									  <th scope="row">2</th>
+									  <td>DSTV Bill</td>
+									  <td>5000</td>
+									  <td>20th 10 AM</td>
+									</tr>
+									<tr>
+									  <th scope="row">3</th>
+									  <td>Eko Electricity Bill</td>
+									  <td>2000</td>
+									  <td>22nd 11:45 AM</td>
+									</tr>
+								  </tbody>
+								</table>
+							</div>
+						</div>
+						<div class="card mt-5 me-4 bg-light border border-secondary rounded-top" style="margin-bottom: 5rem">
+							<div class="card-body">
+								<h1 class="card-title">
+									Pay Bills
+								</h1>
+								<div class="accordion accordion-flush" id="accordionExample">
+								  <div class="accordion-item">
+									<h2 class="accordion-header" id="headingOne">
+									  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+										Electricity Bills
+									  </button>
+									</h2>
+									<div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+									  <div class="accordion-body">
+												<div class="row">
+													<div class="mb-4 col-12 col-md-6 col-xl-4">
+														<button type="button" class="btn btn-light rounded">
+															<img src="/images/IKEDC.png">
+														</button>
+													</div>	
+													<div class="mb-4 col-12 col-md-6 col-xl-4">
+														<button type="button" class="btn btn-light rounded">
+															<img src="/images/Kedco-removebg-preview.png">
+														</button>
+													</div>	
+													<div class="mb-4 col-12 col-md-6 col-xl-4">
+														<button type="button" class="btn btn-light rounded">
+															<img src="/images/kaduna2-removebg-preview.png">
+														</button>
+													</div>	
+													<div class="mb-4 col-12 col-md-6 col-xl-4">
+														<button type="button" class="btn btn-light rounded">
+															<img src="/images/eko-removebg-preview.png">
+														</button>
+													</div>	
+													<div class="mb-4 col-12 col-md-6 col-xl-4">
+														<button type="button" class="btn btn-light rounded">
+															<img src="/images/ibedc-removebg-preview.png">
+														</button>
+													</div>	
+													<div class="mb-4 col-12 col-md-6 col-xl-4">
+														<button type="button" class="btn btn-light rounded px-0">
+															<img src="/images/jedc-removebg-preview.png">
+														</button>
+													</div>		
+													<div class="mb-4 col-12 col-md-6">
+														<button type="button" class="btn btn-light rounded px-0">
+															<img src="/images/aedc-removebg-preview.png">
+														</button>
+													</div>
+													<div class="col-12 col-md-6">
+														<button type="button" class="btn btn-light rounded px-0">
+															<img src="/images/phed2-removebg-preview.png" class="w-75">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									  </div>
+									</div>
+							
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingTwo">
+									  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Airtime
+									  </button>
+									</h2>
+									<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<div class="row">
+											<div class="col-12 col-md-6 col-xl-3 networkProviders">
+												<button type="button" class="btn btn-light rounded">
+													<img src="/images/Airtel_logo_logotype_emblem-removebg-preview.png">
+												</button>
+											</div>	
+											<div class="col-12 col-md-6 col-xl-3 networkProviders">
+												<button type="button" class="btn btn-light rounded">
+													<img src="/images/MTN-logo-459AAF9482-seeklogo.com.png">
+												</button>
+											</div>	
+											<div class="col-12 col-md-6 col-xl-3 networkProviders">
+												<button type="button" class="btn btn-light rounded">
+													<img src="/images/glo-removebg-preview.png">
+												</button>
+											</div>	
+											<div class="col-12 col-md-6 col-xl-3 networkProviders">
+												<button type="button" class="btn btn-light rounded">
+													<img src="/images/9mobile.png">
+												</button>
+											</div>	
+										</div>
+									</div>
+								  </div>
+								  <div class="accordion-item">
+									<h2 class="accordion-header" id="headingThree">
+									  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										Tv Subscription
+									  </button>
+									</h2>
+									<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+									<div class="accordion-body">
+										<div class="row">
+											<div class="col-12 col-md-6 col-xl-4 cableNetworks ">
+												<button type="button" class="btn btn-light rounded">
+													<img src="/images/Pay-DSTV-Subscription.jpg">
+												</button>
+											</div>	
+											<div class="col-12 col-md-6 col-xl-4 cableNetworks ">
+												<button type="button" class="btn btn-light rounded">
+													<img src="/images/gotv-removebg-preview.png">
+												</button>
+											</div>	
+											<div class="col-12 col-md-12 col-xl-4 cableNetworks px-0">
+												<button type="button" class="btn btn-light rounded">
+													<img src="/images/startimes-removebg-preview.png">
+												</button>
+											</div>		
+										</div>
+									</div>
+								</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					<div>
+				</div>
+			</div>
+        </div>
+	<!-- Content End -->
+      <%- include("partials/footer") %>

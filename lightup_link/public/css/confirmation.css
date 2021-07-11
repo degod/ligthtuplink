@@ -1,0 +1,75 @@
+.confirmationBody{
+    color: rgb(33, 33, 47);
+    background-color: #1071;
+	width: 90%;
+    line-height: 3rem;
+	margin-left: auto;
+    margin-right: auto;
+	padding-bottom: 3rem;
+	margin-bottom: 2rem;
+}
+.confirmationHeader{
+	text-align: center;
+    padding: 2rem;
+}
+.confirmationList{
+	font-size: 1rem;
+	line-height: 1.4rem;
+    font-weight: 400;
+    padding-left: 10%;
+    width: 74%;
+}
+#Transactionid{
+	padding-left: 150px;
+	margin-bottom: 10px;
+}
+.confirmationButton{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	padding-left: 7rem;
+}
+.confirmationButton1{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+.payImages{
+	width: 500px;
+	height: 450px;
+}
+.cardPay{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1px;
+	width: 450px;
+}
+.bankPay{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media screen and (min-width: 435px){
+	.cardPayText{
+		display: none;
+	}
+}
+@media screen and (max-width: 425px){
+	#Transactionid{
+		padding-left: 30px;
+	}
+	.confirmationList{
+		padding-left: 50px;
+	}
+	.cardPay{
+		width: 149.2px;
+	}
+	.cardPayImg{
+		display: none;
+	}
+	.cardPayText{
+		display: block;
+		padding: 0.875rem 1.5rem;
+	}
+}

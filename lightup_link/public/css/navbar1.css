@@ -1,0 +1,8 @@
+@media screen and (max-width: 360px){
+	#sidebar{
+		margin-top: 78px;
+	}
+}
+.bg-light{
+	background-color: #0b6626 !important;
+}

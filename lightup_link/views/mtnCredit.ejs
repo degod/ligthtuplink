@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Pay Bills">
+        <meta name="author" content="AddiktedSolution">
+		<link rel="stylesheet" Content-type="text/css" href="/css/app.css"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
+		
+		<!-- 	favicon icons	 -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon.ico">
+		<link rel="manifest" href="/favicon_io/site.webmanifest">
+        
+        <title>LightUp Link - Light is life</title>
+
+        <%- include("partials/barpath") %>
+    </head>
+
+
+    <body >
+			<!-- Sidebar -->
+			<%- include("partials/sidebar") %>
+			<!-- Sidebar Ends -->
+		
+			<!-- Top Bar Start -->
+            <%- include("partials/navbar") %>
+            <!-- Top Bar End -->
+
+
+						<div class="container">
+							<div class="row">
+								<div class="col-md-2">
+								</div>
+								<div class="col-md-8 jumbotron">
+									<div class="row">
+										<div class="col-4">
+										</div>
+										<div class="col-4">										
+											<img class="p-2" src="/images/MTN-logo-459AAF9482-seeklogo.com.png">
+										</div>
+										<div class="col-4">
+										</div>
+									</div>	
+								<form class="p-5" method="get" action="/airtimeConfirmation">
+									<div class="form-row"> 
+										<div class="form-group col-12 col-xl-6">
+											<label for="inputEmail4">Email</label>
+											<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+										</div>
+										<div class="form-group col-12 col-xl-6">
+											<label for="phoneNumber">Phone Number</label>
+											<input type="text" class="form-control" id="phoneNumber" placeholder="+123 4567 890 1112">
+										</div>
+										<div class="form-group col-12 col-xl-6">
+											<label for="amountPaid">Amount(Naira)</label>
+											<input type="text" class="form-control" id="amountPaid" placeholder="Enter Amount">
+										</div>
+									</div> 
+									
+									<button type="submit" class="btn btn-primary" onclick="getDataAirtime()">Continue</button>
+									<button type="submit" class="btn btn-primary">Cancel</button>
+								</form>
+							</div>
+							<div class="col-md-2">	
+							</div>
+						</div>
+					</div> <!-- container -->
+					<div>
+					</div>
+				</div>
+        	</div>
+	<!-- Content End -->
+
+            <%- include("partials/footer") %>

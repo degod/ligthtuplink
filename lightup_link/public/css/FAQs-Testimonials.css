@@ -1,0 +1,43 @@
+#bgimage-1{
+	background-image: url("/images/jonatan-pie-EvKBHBGgaUo-unsplash.jpg");
+	height: 80px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.a{
+	color: white ;
+	text-decoration: none;
+}
+.contentCenter{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.contentCenter button{
+	font-size: 1.2rem;
+}
+#testimonials{
+	margin-top: 9rem;
+	text-align: center;
+}
+#testimonials p{
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: .9rem;
+}
+#testimonials div {
+	margin-top: 1rem;
+}
+#faqs{
+	margin-top: 9rem;
+	text-align: center;
+}
+#faqs div{
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+.card-body img{
+	clip-path: circle(50%);
+}

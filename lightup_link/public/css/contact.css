@@ -1,0 +1,108 @@
+body{
+	 background-image: url("/images/wil-stewart-T26KCgCPsCI-unsplash.jpg");
+	 color: white;
+	 font-family: 'Raleway', sans-serif;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: gold;
+}
+.bg-success{
+    background-color: #015230 !important;
+}
+a{
+	color: gold;
+}
+a:hover{
+	color: gold;
+}
+#logo{
+	 display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 40%;
+}
+.Wrapper{
+	width: 80%;
+	margin: auto;
+}
+.font{
+	font-family: 'Raleway', sans-serif;
+}
+.text-centered{
+	text-align: center;
+}
+#forms{
+	margin: auto;
+	padding-right: 10px !important;
+	background-color: rgba(0, 90, 0, 1);
+	color: gold;
+	opacity: 0.8;
+	width: 37rem;
+	border: 2.5px solid rgba(0, 59, 0, 1);
+	border-radius: 20px;
+}
+.form-control{
+	width: 94% !important;
+}
+.pr-2{
+	margin-left: 2.5rem;
+}
+.message-width{
+	width: 28rem;
+	margin-left: 2.9rem;
+}
+#send{
+	margin-left: 40%;
+}
+.sendColor{
+	color: gold;
+    background-color: #015230;
+}
+#footer{
+	background-color: black;
+	color: gold;
+	opacity: 0.7;
+}
+#socialmediaicons{
+	margin-block: 0;
+	margin-inline: 0;
+}
+#facebook{
+	color: #4267B2;
+}
+#twitter{
+	color: #1DA1F2;
+}
+#instagram{
+	color: pink;
+}
+.border-bottom{
+	border-bottom: 1px solid #015230 ! important;
+}
+#collapse-icon{
+	font-size: 30px;
+	padding: 0.3em;
+	color: #b5a226;
+	border: 1.5px solid #05630e;
+	border-radius: 10px;
+}
+.navbar-toggler:focus{
+	box-shadow: 0 0 0 0;
+}
+@media screen and (max-width: 1200px ){
+	#nav-ul{
+		width:900px;
+	}
+}
+@media screen and (min-width: 1200px){
+	#nav-ul{
+		width:1000px;
+	}
+}@media screen and (max-width: 700px){
+	.form-control{
+		width:80% !important;
+	}
+	#forms{
+		width: 90%;
+	}
+}

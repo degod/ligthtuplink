@@ -1,0 +1,100 @@
+body{
+		background-image: url("/images/wil-stewart-T26KCgCPsCI-unsplash.jpg");
+	    font-family: 'Raleway', sans-serif;
+	
+}
+.navbar-light .navbar-nav .nav-link{
+    color: gold;
+}
+.bg-success{
+    background-color: #015230 !important;
+}
+a{
+	color: gold;
+	text-decoration: none;
+}
+a:hover{
+	color: gold;
+}
+#logo{
+	 display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 40%;
+}
+.Wrapper{
+	width: 80%;
+	margin: auto;
+}
+.font{
+	font-family: 'Raleway', sans-serif;
+}
+.text-centered{
+	text-align: center;
+}
+.imagesize{
+	width: 60%;
+}
+.pr-5{
+	margin-left: 6rem;
+}
+.bg-image {
+  /* The image used */
+
+  /* Add the blur effect */
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	
+	/* Font Color */
+	color: white;
+}
+.border-bottom{
+	border-bottom: 1px solid #015230 ! important;
+}
+#footer{
+	background-color: black;
+	color: gold;
+	opacity: 0.7;
+}
+#socialmediaicons{
+	margin-block: 0;
+	margin-inline: 0;
+}
+
+@media screen and (max-width: 770px ){
+	.imagesize{
+		display : block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#image1{
+		margin-bottom: 20px !important;
+	}
+}
+#facebook{
+	color: #4267B2;
+}
+#twitter{
+	color: #1DA1F2;
+}
+#instagram{
+	color: pink;
+}
+@media screen and (max-width: 1200px ){
+	#nav-ul{
+		width:900px;
+	}
+}
+@media screen and (min-width: 1200px){
+	#nav-ul{
+		width:1000px;
+	}
+}

@@ -1,0 +1,22 @@
+body{
+	overflow-x: hidden;
+	background-image: url("/images/wil-stewart-T26KCgCPsCI-unsplash.jpg");
+}
+#logo{
+	 display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 40%;
+}
+.btn-primary{
+	background-color: #0b6602;
+}
+.fontIncr{
+	font-size: 1rem;
+}
+a{
+	text-decoration: none;
+}
+.navbar{
+	background-color: #0b6626 !important;
+}

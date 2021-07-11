@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	  <!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Lightup Link - confirmation</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+	<%- include("partials/barpath") %>
+	<link rel="stylesheet" href="/css/confirmation.css">
+</head>
+<body>
+  <%- include("partials/sidebar") %>
+    <!-- partial -->
+    <%- include("partials/navbar") %>
+						<div class="confirmationBody">
+    						<h2 class="confirmationHeader">Kindly Confirm Transaction Details</h2>
+							<div class="row">
+								<p class="confirmationList col-md-6">Product: <span id="data"> Airtime</span></p>
+								<p class="confirmationList col-md-6">SmartCard/IUC Number/E-Wallet: <span id="data0">cardNumber</span></p>
+								<p class="confirmationList col-md-6">Email: <span id="data1"> Email</span> </p>
+								<p class="confirmationList col-md-6">Phone: <span id="data2"> Phone</span></p>
+								<p class="confirmationList col-md-6">Amount:&#8358;<span id="data3"> Amount</span> + &#8358;35(Convenience fee)</p>
+								<p class="confirmationList col-md-6">Status:<span id="data4"> <%=status%></span></p>
+								<p class="confirmationList col-md-6 mb-0">Total Amount Paid :&#8358;<span id="data5">  totalAmount</span></p><br>
+								<p class="confirmationList col-md-12" id="Transactionid">Transaction ID:<span id="data6"> <%=transId%></span></p>
+							</div>
+							<div class="confirmationButton1">
+								<button type="submit" class="btn btn-primary cardPay mb-3">
+									<img class="cardPayImg" src="/images/other/Pay With Card.png">
+									<span class="cardPayText"><i class="fas fa-credit-card"></i>Credit Card</span>
+								</button>
+								<button type="submit" class="btn btn-outline-primary bankPay"><i class="fas fa-exchange-alt"></i> Bank Transfer</button>
+							</div>
+					<div>
+				</div>
+			</div>
+        </div>
+	<!-- Content End -->
+	<script>
+        //displaying the value from local storage to another page by their respective Ids
+document.getElementById("data").innerHTML=localStorage.getItem("bouquetValue");
+document.getElementById("data0").innerHTML=localStorage.getItem("smartCardNumValue");
+document.getElementById("data1").innerHTML=localStorage.getItem("inputEmailValue");
+document.getElementById("data2").innerHTML=localStorage.getItem("telephoneValue");
+document.getElementById("data3").innerHTML=localStorage.getItem("amountPaidValue");
+document.getElementById("data5").innerHTML=localStorage.getItem("totalAmount");
+    </script>
+<%- include("partials/footer") %>

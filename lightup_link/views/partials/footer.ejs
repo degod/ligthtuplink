@@ -1,0 +1,113 @@
+<%- include("TermsConditions") %>
+<%- include("privacy") %>
+
+<footer class="footer top-100">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                <span class="text-muted d-flex text-center text-sm-left d-sm-inline-flex">&#169; 2021 Lightup Link | <a class="text-secondary" href="#offcanvasWithBothOptions1" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasWithBothOptions1">Privacy Policy</a> | <a class="text-secondary" href="#offcanvasWithBothOptions" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasWithBothOptions">Term of Use</a> | <a class="text-secondary" href= "https://lightup-link.run-eu-central1.goorm.io/FAQs-Testimonials#faqs" target="_self">FAQS</a> |</span>
+                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> <b class="footerNote-text text-secondary">Powered By:</b> <span id="Prog-brand" class="footerNote-text" style="color: Black;">addikted<span style="color: #c41a1a;"> Solutions</span></span> 
+				  </span>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- base:js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+	<script src="/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+	<script src="/vendors/chart.js/Chart.min.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+	<script src="/js/off-canvas.js"></script>
+	<script src="/js/hoverable-collapse.js"></script>
+	<script src="/js/template.js"></script>
+  <!-- endinject -->
+  <!-- plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- Custom js for this page-->
+	<script src="/js/dashboard.js"></script>
+  <!-- End custom js for this page-->
+ <script>
+		function getData()
+{
+	var dataSub = document.getElementById("formSelect");
+    //getting the values
+    var dataSubscribe = dataSub.options[dataSub.selectedIndex].text;
+    var inputEmail= document.getElementById("inputEmail").value; 
+    var telephone= document.getElementById("phoneNumber").value; 
+    var amountPaid= (document.getElementById("amountPaid").value); 
+	var totalAmount = amountPaid;
+    //saving the values in local storage
+    localStorage.setItem("dataSubscribeValue", dataSubscribe);
+    localStorage.setItem("inputEmailValue", inputEmail);
+    localStorage.setItem("telephoneValue", telephone);
+    localStorage.setItem("amountPaidValue", amountPaid);
+	localStorage.setItem("totalAmount", totalAmount);
+};
+	 
+function getDataAirtime()
+{
+    //getting the values
+    var inputEmail= document.getElementById("inputEmail").value; 
+    var telephone= document.getElementById("phoneNumber").value; 
+    var amountPaid= parseInt(document.getElementById("amountPaid").value); 
+	var totalAmount = amountPaid;
+    //saving the values in local storage
+   
+    localStorage.setItem("inputEmailValue", inputEmail);
+    localStorage.setItem("telephoneValue", telephone);
+    localStorage.setItem("amountPaidValue", amountPaid); 
+	localStorage.setItem("totalAmount", totalAmount);
+};
+	 function getDataTvSubscription()
+	 {
+	var bouquetSub = document.getElementById("bouquet");
+	var bouquet = bouquetSub.options[bouquetSub.selectedIndex].text;	 
+	var smartCardNum = document.getElementById("cardNumber").value;
+    var inputEmail= document.getElementById("inputEmail").value; 
+    var telephone= document.getElementById("phoneNumber").value; 
+    var amountPaid= parseInt(document.getElementById("amountPaid").value); 
+	var totalAmount = amountPaid + 35;
+    //saving the values in local storage
+    localStorage.setItem("bouquetValue", bouquet);
+	localStorage.setItem("smartCardNumValue", smartCardNum);
+    localStorage.setItem("inputEmailValue", inputEmail);
+    localStorage.setItem("telephoneValue", telephone);
+    localStorage.setItem("amountPaidValue", amountPaid);
+	localStorage.setItem("totalAmount", totalAmount);
+};
+	 		function getDataElectricity()
+{
+	var meter = document.getElementById("meterType");
+    //getting the values
+    var meterType = meter.options[meter.selectedIndex].text;
+	 var meterNumber = document.getElementById("meterNum").value; 
+    var inputEmail= document.getElementById("inputEmail").value; 
+    var telephone= document.getElementById("phoneNumber").value; 
+    var amountPaid= parseInt(document.getElementById("amountPaid").value); 
+	var totalAmount = amountPaid + 35;
+	
+    //saving the values in local storage
+    localStorage.setItem("meterTypeValue", meterType);
+	localStorage.setItem("meterNumberValue", meterNumber); 
+    localStorage.setItem("inputEmailValue", inputEmail);
+    localStorage.setItem("telephoneValue", telephone);
+    localStorage.setItem("amountPaidValue", amountPaid);   
+	localStorage.setItem("totalAmount", totalAmount);
+};
+	 
+	 
+	</script>
+</body>
+
+</html>
