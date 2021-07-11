@@ -204,7 +204,7 @@ app.post('/forgotPassword', function(req, res, next) {
       var smtpTransport = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-          user: 'dondannyster2@gmail.com',
+          user: '@gmail.com',
           pass: process.env.GMAIL_PW
         },
       });
@@ -266,7 +266,7 @@ app.post('/reset/:token', function(req, res) {
       var smtpTransport = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-          user: 'dondannyster2@gmail.com',
+          user: '@gmail.com',
           pass: process.env.GMAIL_PW
         }
       });
